@@ -1,0 +1,16 @@
+.attendance {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.results-container {
+  text-align: center;
+  margin-top: 10rem;
+  margin: auto;
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem 3rem;
+}

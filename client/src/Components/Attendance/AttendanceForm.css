@@ -1,0 +1,72 @@
+
+
+.attendance-form {
+  margin: 10px;
+}
+
+.attendance-form input {
+  margin: 0px 0.5rem;
+}
+
+.subject-input {
+  width: 100%;
+  margin: 1rem;
+  padding: 2px;
+}
+
+.dates-inputs {
+  width: 100%;
+  margin: 1rem;
+}
+
+.dates-inputs .start-date {
+  margin: 0px 1rem;
+}
+
+.dates-inputs .end-date {
+}
+
+.days-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* .select-days {
+  margin-top: 10px;
+} */
+
+.multi-select {
+  padding: 0;
+  display: inline-block;
+  background-color: white;
+  margin: 10px;
+  width: 35vw;
+}
+
+.classes-missed {
+  margin: 1rem;
+}
+
+.classes-cancelled {
+  margin: 1rem;
+}
+
+.attendance-calculate {
+  margin: auto;
+  display: block;
+  appearance: button;
+  background-color: #405cf5;
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #fff;
+  outline: none;
+  padding: 0 40px;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 1rem auto;
+  width: 100%;
+  text-align: center;
+}

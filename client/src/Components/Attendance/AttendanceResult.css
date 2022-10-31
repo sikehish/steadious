@@ -1,0 +1,30 @@
+.card {
+  font-family: "poppins";
+  line-height: 2rem;
+  text-align: center;
+  margin: 0 auto;
+  color: #080a52;
+  background-color: rgba(159, 205, 245, 0.9);
+  padding: 2rem;
+  /* border: 2px solid red; */
+}
+
+.days-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.days-result li {
+  display: block;
+  margin: 10px;
+  background-color: aliceblue;
+  padding: 0 10px;
+}
+
+.circle {
+  margin: auto;
+  height: 150px;
+  width: 150px;
+}

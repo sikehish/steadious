@@ -1,0 +1,134 @@
+* {
+  text-align: center;
+}
+
+.sgpa-article {
+  padding: 10px;
+  margin: 10px;
+}
+
+.sgpa-result {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sgpa-result li {
+  font-family: "poppins";
+  padding: 2px;
+  margin: 5px;
+}
+
+.sgpa-article .grade-pts {
+  font-family: "poppins";
+  padding: 5px 10px;
+  margin: 10px;
+}
+
+.sgpa-article.crdts {
+  font-family: "poppins";
+  padding: 5px 10px;
+  margin: 10px;
+}
+
+.add-btn,
+.bottom-btns button:nth-child(2) {
+  appearance: button;
+  background-color: #405cf5;
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #fff;
+  outline: none;
+  padding: 0 40px;
+  position: relative;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 10px;
+}
+
+.edit-btn {
+  appearance: button;
+  background-color: #f7f2f2;
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: rgb(8, 0, 0);
+  outline: none;
+  padding: 0 40px;
+  position: relative;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 10px;
+}
+
+.delete-btn,
+.bottom-btns button:first-child {
+  appearance: button;
+  background-color: #f10101;
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  outline: none;
+  padding: 0 40px;
+  position: relative;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 10px;
+}
+
+.add-btn:hover,
+.bottom-btns button:nth-child(2):hover {
+  background-color: #253cc0;
+}
+
+.edit-btn:hover {
+  background-color: #ddd4d4;
+}
+
+.delete-btn:hover,
+.bottom-btns button:first-child:hover {
+  background-color: #c41515;
+}
+
+.bottom-btns {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-btns button:first-child {
+  width: 100%;
+}
+
+.bottom-btns button:nth-child(2) {
+  width: 100%;
+}
+
+/* Sgpa result */
+.sgpa-final-result {
+  font-family: "poppins";
+}
+
+.sgpa-final-result span {
+  font-weight: 900;
+  font-size: larger;
+}
+
+.sgpa-article input {
+  background-color: rgb(229, 235, 240);
+  color: black;
+  border-radius: 85px;
+  padding: 5px 10px;
+  margin: 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.sgpa-article input:focus {
+  background-color: rgb(211, 218, 224);
+  border: 1px solid #555;
+}

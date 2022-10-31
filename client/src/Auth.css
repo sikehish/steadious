@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid black;
+  margin: 5rem auto;
+  padding: 5rem 10px;
+  max-width: 20%;
+}
+.auth-form label {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+}
+
+.auth-form input {
+  display: block;
+  width: 100%;
+  /* margin-right: 10px; */
+  text-align: left;
+}

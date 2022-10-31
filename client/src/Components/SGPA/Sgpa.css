@@ -1,0 +1,7 @@
+.sgpa {
+  color: rgb(14, 0, 75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
