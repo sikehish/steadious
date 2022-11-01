@@ -123,7 +123,9 @@ function Attendance({ allInfo, setAllInfo }) {
         </div>
       )}
       {allInfo && allInfo.length > 0 && !isEdit && !isError && (
-        <button onClick={handleAllDelete}>Clear all</button>
+        <button className="clear-all" onClick={handleAllDelete}>
+          Clear all
+        </button>
       )}
     </div>
   );

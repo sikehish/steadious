@@ -1,10 +1,16 @@
-* {
-  text-align: center;
+.sgpa-article {
+  background-color: rgb(193, 181, 253);
+  box-shadow: 0 0 28px #44337a;
+  padding: 25px 5px;
+  margin: 3rem auto;
+  height: 50%;
+  width: 50%;
 }
 
-.sgpa-article {
-  padding: 10px;
-  margin: 10px;
+.sgpa-article h3 {
+  font-size: large;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .sgpa-result {
@@ -93,17 +99,17 @@
 .bottom-btns {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
 .bottom-btns button:first-child {
-  width: 100%;
+  width: 40%;
 }
 
 .bottom-btns button:nth-child(2) {
-  width: 100%;
+  width: 40%;
 }
 
 /* Sgpa result */

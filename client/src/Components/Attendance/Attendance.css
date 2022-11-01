@@ -3,14 +3,32 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
 }
 
 .results-container {
   text-align: center;
-  margin-top: 10rem;
+  padding-bottom: 2rem;
   margin: auto;
-  width: 50%;
+  width: 60%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem 3rem;
+}
+
+.clear-all {
+  display: block;
+  /* margin-top: 2rem; */
+  width: 50%;
+  appearance: button;
+  background-color: #f10101;
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  outline: none;
+  padding: 0 40px;
+  position: relative;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 10px;
 }

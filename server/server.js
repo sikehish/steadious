@@ -28,7 +28,7 @@ mongoose
   })
   .then((con) => {
     // console.log(con.connections);
-    app.listen(process.env.PORT, () => {
+    app.listen(process.env.PORT || 8000, () => {
       console.log("LISTENIN..");
     });
   });

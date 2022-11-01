@@ -1,15 +1,31 @@
-* {
+.form-container {
+  padding: 5rem 0;
+  padding-bottom: 3rem;
   text-align: center;
+  background-color: rgb(182, 223, 255);
+  /* height: 100%; */
+  width: 100%;
 }
 
 .cgpa-article {
-  padding: 10px;
-  margin: 10px;
-  margin: auto;
-  width: 50vw;
+  /* border: 2px solid red; */
+  background-color: rgb(193, 181, 253);
+  box-shadow: 0 0 28px #44337a;
+  /* border-radius: 20px; */
+  padding: 25px 0px;
+  margin: 3rem auto;
+  height: 50%;
+  width: 50%;
+}
+
+.cgpa-article h3 {
+  font-size: large;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .cgpa-result {
+  text-align: center;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -25,17 +41,17 @@
 .sgpa-pts {
   font-family: "poppins";
   padding: 5px 10px;
-  margin: 10px;
+  margin: 5px;
 }
 
 .crdts {
   font-family: "poppins";
   padding: 5px 10px;
-  margin: 10px;
+  margin: 5px;
 }
 
-.add-btn,
-.bottom-btns button:nth-child(2) {
+.cgpa-article .add-btn,
+.cgpa-article .bottom-btns button:nth-child(2) {
   appearance: button;
   background-color: #405cf5;
   border-radius: 6px;
@@ -49,7 +65,7 @@
   margin: 10px;
 }
 
-.edit-btn {
+.cgpa-article .edit-btn {
   appearance: button;
   background-color: #f7f2f2;
   border-radius: 6px;
@@ -63,8 +79,8 @@
   margin: 10px;
 }
 
-.delete-btn,
-.bottom-btns button:first-child {
+.cgpa-article .delete-btn,
+.cgpa-article .bottom-btns button:first-child {
   appearance: button;
   background-color: #f10101;
   border-radius: 6px;
@@ -78,38 +94,39 @@
   margin: 10px;
 }
 
-.add-btn:hover,
-.bottom-btns button:nth-child(2):hover {
+.cgpa-article .add-btn:hover,
+.cgpa-article .bottom-btns button:nth-child(2):hover {
   background-color: #253cc0;
 }
 
-.edit-btn:hover {
+.cgpa-article .edit-btn:hover {
   background-color: #ddd4d4;
 }
 
-.delete-btn:hover,
-.bottom-btns button:first-child:hover {
+.cgpa-article .delete-btn:hover,
+.cgpa-article .bottom-btns button:first-child:hover {
   background-color: #c41515;
 }
 
-.bottom-btns {
+.cgpa-article .bottom-btns {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.bottom-btns button:first-child {
-  width: 100%;
+.cgpa-article .bottom-btns button:first-child {
+  width: 40%;
 }
 
-.bottom-btns button:nth-child(2) {
-  width: 100%;
+.cgpa-article .bottom-btns button:nth-child(2) {
+  width: 40%;
 }
 
 /* Sgpa result */
 .cgpa-final-result {
+  background-color: rgb(182, 223, 255);
   font-family: "poppins";
 }
 
@@ -127,6 +144,7 @@
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
+  width: 23%;
   box-sizing: border-box;
 }
 

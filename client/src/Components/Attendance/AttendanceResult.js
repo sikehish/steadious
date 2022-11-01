@@ -64,13 +64,21 @@ function AttendanceResult({ detail, isError, deleteAttn, editAttn, isEdit }) {
         </div>
       )}
       {!isError && !isEdit && (
-        <button type="button" onClick={() => deleteAttn(_id)}>
+        <button
+          type="button"
+          style={{ marginTop: "17px", marginRight: "8px" }}
+          onClick={() => deleteAttn(_id)}
+        >
           <FaTrash />
         </button>
       )}
       {!isError && !isEdit && (
-        <button type="button" onClick={() => editAttn(_id)}>
-          Edit
+        <button
+          type="button"
+          style={{ marginTop: "17px" }}
+          onClick={() => editAttn(_id)}
+        >
+          <FaEdit />
         </button>
       )}
     </div>

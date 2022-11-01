@@ -28,15 +28,18 @@ function Navbar({ setAllInfo }) {
         </Link>
         <Link
           to="/sgpa-calculator"
-          className="mx-2 font-sans focus:text-violet-700  hover:font-extrabold"
+          className="mx-2 font-sans  hover:font-extrabold"
           // style={{ "font-family": "poppins" }}
         >
           SGPA Calculator
         </Link>
-        <Link to="/cgpa-calculator" className="mx-2 hover:font-extrabold">
+        <Link
+          to="/cgpa-calculator"
+          className="mx-2 font-sans  hover:font-extrabold"
+        >
           CGPA Calculator
         </Link>
-        <Link to="/attendance" className="mx-2 hover:font-extrabold">
+        <Link to="/attendance" className="mx-2 font-sans  hover:font-extrabold">
           Attendance
         </Link>
         {state.user && (

@@ -43,86 +43,89 @@ function SgpaForm({ setIsClicked, totalInfo, setTotalInfo }) {
   };
 
   return (
-    <article className="sgpa-article">
-      <form onSubmit={handleSubmit}>
-        <label className="grade-pts">
-          Grade Points
-          <input
-            type="number"
-            min="0"
-            max="10"
-            onChange={(e) =>
-              setSgpaInfo((prev) => ({ ...prev, pts: e.target.value }))
-            }
-            value={sgpaInfo.pts}
-            required
-          />
-        </label>
+    <div className="form-container">
+      <article className="sgpa-article">
+        <h3>SGPA Calculator</h3>
+        <form onSubmit={handleSubmit}>
+          <label className="grade-pts">
+            Grade Points
+            <input
+              type="number"
+              min="0"
+              max="10"
+              onChange={(e) =>
+                setSgpaInfo((prev) => ({ ...prev, pts: e.target.value }))
+              }
+              value={sgpaInfo.pts}
+              required
+            />
+          </label>
 
-        <label className="crdts">
-          Credits
-          <input
-            type="number"
-            min="1"
-            max="6"
-            step="0.5"
-            onChange={(e) =>
-              setSgpaInfo((prev) => ({ ...prev, crdts: e.target.value }))
-            }
-            value={sgpaInfo.crdts}
-            required
-          />
-        </label>
+          <label className="crdts">
+            Credits
+            <input
+              type="number"
+              min="1"
+              max="6"
+              step="0.5"
+              onChange={(e) =>
+                setSgpaInfo((prev) => ({ ...prev, crdts: e.target.value }))
+              }
+              value={sgpaInfo.crdts}
+              required
+            />
+          </label>
 
-        <button type="submit" className="add-btn">
-          {isEdit ? <FaEdit /> : <FaPlusCircle />}
-        </button>
-      </form>
+          <button type="submit" className="add-btn">
+            {isEdit ? <FaEdit /> : <FaPlusCircle />}
+          </button>
+        </form>
 
-      <div>
-        {totalInfo.length > 0 &&
-          totalInfo.map((el, ind) => (
-            <ul className="sgpa-result" key={el.id}>
-              <li>Subject-{ind + 1} </li>
-              <li>Grade Points: {el.pts} </li>
-              <li>Credits: {el.crdts}</li>
-              {!isEdit && (
-                <button
-                  className="delete-btn"
-                  onClick={(e) => handleDelete(el.id)}
-                >
-                  <FaTrash />
-                  {/* style={{ color: "rgba(255,0,0,0.8)" }} */}
-                </button>
-              )}
-              {!isEdit && (
-                <button
-                  type="button"
-                  className="edit-btn"
-                  onClick={(e) => handleEdit(el.id)}
-                >
-                  <FaEdit />
-                </button>
-              )}
-            </ul>
-          ))}
-        {totalInfo.length > 0 && !isEdit && (
-          <div className="bottom-btns">
-            <button
-              onClick={() => {
-                setTotalInfo([]);
-                setIsClicked(false);
-              }}
-            >
-              Clear All
-            </button>
-            <button type="button" onClick={() => setIsClicked(true)}>
-              Calculate
-            </button>
-          </div>
-        )}
-      </div>
-    </article>
+        <div>
+          {totalInfo.length > 0 &&
+            totalInfo.map((el, ind) => (
+              <ul className="sgpa-result" key={el.id}>
+                <li>Subject-{ind + 1} </li>
+                <li>Grade Points: {el.pts} </li>
+                <li>Credits: {el.crdts}</li>
+                {!isEdit && (
+                  <button
+                    className="delete-btn"
+                    onClick={(e) => handleDelete(el.id)}
+                  >
+                    <FaTrash />
+                    {/* style={{ color: "rgba(255,0,0,0.8)" }} */}
+                  </button>
+                )}
+                {!isEdit && (
+                  <button
+                    type="button"
+                    className="edit-btn"
+                    onClick={(e) => handleEdit(el.id)}
+                  >
+                    <FaEdit />
+                  </button>
+                )}
+              </ul>
+            ))}
+          {totalInfo.length > 0 && !isEdit && (
+            <div className="bottom-btns">
+              <button
+                onClick={() => {
+                  setTotalInfo([]);
+                  setIsClicked(false);
+                }}
+              >
+                Clear All
+              </button>
+              <button type="button" onClick={() => setIsClicked(true)}>
+                Calculate
+              </button>
+            </div>
+          )}
+        </div>
+      </article>
+    </div>
   );
 }
 

@@ -46,6 +46,7 @@ function App() {
             path="/login"
             element={!state.user ? <Login /> : <Navigate to="/attendance" />}
           />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
       </Router>

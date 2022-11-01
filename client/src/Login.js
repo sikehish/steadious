@@ -1,12 +1,25 @@
 import React, { useState, useEffect } from "react";
 import useLogin from "./Hooks/useLogin";
 import "./Auth.css";
+import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
   const [email, setEmail] = useState("");
   const [pw, setPw] = useState("");
   const { login, error, isLoading, isSucc } = useLogin();
   // const [isSigned, setIsSigned] = useState(false);
+
+  // const navigate = useNavigate();
+
+  // const useEffect =
+  //   (() => {
+  //     if (isSucc) {
+  //       setTimeout(() => {
+  //         navigate("/attendance");
+  //       }, 1500);
+  //     }
+  //   },
+  //   [isSucc]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -23,6 +36,7 @@ function Login() {
 
   return (
     <form onSubmit={handleSubmit} className="auth-form">
+      <h3>Log In</h3>
       <label htmlFor="em">Email</label>
       <input
         type="email"
@@ -41,8 +55,19 @@ function Login() {
       <button disabled={isLoading} type="submit">
         Login
       </button>
-      {error && <div>{error}</div>}
-      {isSucc && <div>Succesfuly logged in!</div>}
+      {error && (
+        <div style={{ color: "red", margin: "10px", "font-weight": "900" }}>
+          {error}
+        </div>
+      )}
+      {isSucc && (
+        <div style={{ color: "green", margin: "10px", "font-weight": "900" }}>
+          Succesfuly logged in!
+        </div>
+      )}
+      <Link to="/signup">
+        Not yet registered? <span>Signup</span>
+      </Link>
     </form>
   );
 }

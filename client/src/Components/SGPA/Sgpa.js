@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import SgpaForm from "./SgpaForm";
-import SgpaBar from "./SgpaBar";
 import SgpaResult from "./SgpaResult";
 import "./Sgpa.css";
 
@@ -12,7 +11,6 @@ function Sgpa() {
 
   return (
     <section className="sgpa">
-      <SgpaBar />
       <SgpaForm
         setIsClicked={setIsClicked}
         totalInfo={totalInfo}

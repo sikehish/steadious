@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import CgpaForm from "./CgpaForm";
-import CgpaBar from "./CgpaBar";
 import CgpaResult from "./CgpaResult";
 
 function Cgpa() {
@@ -11,7 +10,6 @@ function Cgpa() {
 
   return (
     <section className="cgpa">
-      <CgpaBar />
       <CgpaForm
         setIsClicked={setIsClicked}
         totalInfo={totalInfo}
